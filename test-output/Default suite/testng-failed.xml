@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MyClass">
+      <class name="MyPackage.MyClass">
         <methods>
+          <include name="TestAdditionProcess"/>
           <include name="mySetup"/>
-          <include name="OpenoneBrowserAndUseGoogle"/>
           <include name="postTesting"/>
         </methods>
-      </class> <!-- MyClass -->
+      </class> <!-- MyPackage.MyClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
